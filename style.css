@@ -1,0 +1,26 @@
+.table {
+background: #bbbbbb;
+}
+
+.calcheading {
+height: 30px;
+background: url(images/navback.gif) repeat-x;
+
+color: #ffffff;
+font-size: 16px;
+}
+
+.calcrow {
+height: 30px;
+background: url(images/even-odd-back.gif) repeat-x;
+}
+
+.calcrow2 {
+height: 30px;
+background: #ffffff;
+}
+
+.submit { 
+height: 30px;
+background: #bababa;
+}
