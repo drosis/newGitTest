@@ -1,0 +1,23 @@
+<?php
+if (isset($_POST['valuea'])) $valuea = $_POST['valuea'];
+if (isset($_POST['valueb'])) $valueb = $_POST['valueb'];
+if (isset($_POST['valuec'])) $valuec = $_POST['valuec'];
+$answer = $valuea * $valueb - $valuec;
+
+echo <<<_END
+<form method='post' action='/make-a-website/online-calculator'>
+<table border='0' width='500px' cellpadding='3' cellspacing='1' class="table">
+<tr class="calcheading"><td colspan="2"><strong>Hungry Piranha Demo Calculator</strong></td></tr>
+<tr class="calcrow"><td>Pick a Number:</td><td align="center"><input type='text' name='valuea' value="$valuea"/></td></tr>
+<tr class="calcrow2"><td>Multiply by This Number:</td><td align="center"><input type='text' name='valueb' value="$valueb"/></td></tr>
+<tr class="calcrow"><td>Subtract This Number:</td><td align="center"><input type='text' name='valuec' value="$valuec"/></td></tr>
+<tr class="submit"><td colspan="2"><input type='submit' value='Calculate'/></td></tr>
+_END;
+?>
+
+<tr class="calcrow">
+<td><i>The answer is:</td>
+<td align="center"><input type="text" value="<?php echo round($answer)?>"></td></i>
+</tr>
+</table>
+</form>
